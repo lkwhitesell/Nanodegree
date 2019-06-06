@@ -1,6 +1,5 @@
 # Memory Game Project
 
-----
 ## How the Game Works
 The goal of this game is to turn over pairs of matching cards until there are no more remaining cards. You will start with 16 cards, all lying face down. A usual player turn will look like the following:
 
