@@ -62,6 +62,7 @@ function incrementTimer() {
 let clickedCard = [];
 function cardClicked() {
 	this.classList.add('flipped');
+	this.style.pointerEvents = 'none';
 	clickedCard.push(this);
 
 	// Check how many cards have been clicked
@@ -83,6 +84,9 @@ function cardClicked() {
 			setTimeout(function() {
 				firstCard.classList.remove('flipped');
 				secondCard.classList.remove('flipped');
+
+				firstCard.style.pointerEvents = 'auto';
+				secondCard.style.pointerEvents = 'auto';
 			}, 1000);
 		}
 		clickedCard.length = 0;
@@ -153,8 +157,10 @@ function initCards() {
 function resetGame() {
 	resetValues();
 
-	// Unflip any cards that are flipped
+	// Make cards clickable and unflip any cards that are flipped
 	for(const card of cards) {
+		card.style.pointerEvents = 'auto';
+
 		if(card.classList.contains('flipped')) {
 			card.classList.remove('flipped');
 		}
