@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Game</title>
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/memoryGame.css">
+</head>
+<body>
+	<header>
+		<h1>Memory Game</h1>
+		<div id="gameInfo">
+			<div id="starRating">
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+			<div id="timer">00:00:00</div>
+			<div id="moveCounter">0 Moves</div>
+			<button id="reset" class="fa fa-rotate-right"></button>
+		</div>
+	</header>
+
+	<div id="card-container">
+		<div class="card-row">
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+		</div>
+		<div class="card-row">
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+		</div>
+		<div class="card-row">
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+		</div>
+		<div class="card-row">
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+			<div class="card">
+				<div class="card-face front"></div>
+				<div class="card-face back fa"></div>
+			</div>
+		</div>		
+	</div>
+
+	<div id="winningModal" class="modal">
+		<div class="modal-content">
+			<h1>Congratulations! You Won!</h1>
+			<p id="winningText"></p>
+			<button id="playAgain">Play again!</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/memoryGame.js"></script>
+</body>
+</html>
