@@ -1,3 +1,17 @@
 body {
     text-align: center;
+	font-family: 'Titillium Web', sans-serif;
 }
+
+header {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#gameDetails {	
+	display: flex;
+	justify-content: space-around;
+}
+
