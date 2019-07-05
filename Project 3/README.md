@@ -2,19 +2,23 @@
 
 ## Table of Contents
 
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+- [How to Run](#howtorun)
+- [How to Play](#howtoplay)
 
-## Instructions
+## How to Run
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+To get the game running on your machine, you will need to download or clone the project from the repository.
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
+The repository contains several projects. To access the arcade game, open the **Project 3** folder. Within the **Project 3** folder are css, images, and js folders, as well as an index.html and a README.md file. The only file that you need to worry about is the **index.html** file. To open the game, all you need to do is open the **index.html** file in a web browser. 
 
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
+Now you are ready to play!
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## How to Play
 
-## Contributing
+In this game you have a Player and Enemies (bugs). The goal of the player is to reach the water, without colliding into any one of the enemies.
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+- The player can move left, right, up and down
+- The enemies move at varying speeds on the paved block portion of the game board
+- Once a the player collides with an enemy, the score is reduced and the player moves back to the starting square
+- Once the player reaches the water (i.e., the top of the game board), the score is increased and the player moves back to the starting square
+- At any time, the player can reset the game where the score will be reset and the player will be moved back to the starting square

@@ -146,8 +146,11 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
+// Reset score and player position when button is pressed
 const resetButton = document.getElementById('resetButton');
 resetButton.addEventListener('click', function() {
+    player.xPosition = 200;
+    player.yPosition = 400;
     player.score = 0;
     document.getElementById('score').textContent = player.score;
 });
