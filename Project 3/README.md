@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [How to Run](#howtorun)
-- [How to Play](#howtoplay)
+- [How to Run](#how-to-run)
+- [How to Play](#how-to-play)
 
 ## How to Run
 
