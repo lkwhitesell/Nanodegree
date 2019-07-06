@@ -55,9 +55,9 @@ Player.prototype.update = function() {
         this.score += 5;
         document.getElementById('score').textContent = this.score;
 
-        setTimeout(function() {
-            player.xPosition = 200;
-            player.yPosition = 400;
+        setTimeout(() => {
+            this.xPosition = 200;
+            this.yPosition = 400;
         }, 500);
     }
 
