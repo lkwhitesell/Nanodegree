@@ -90,22 +90,21 @@ $(function() {
 
     /* Test suite for testing loading new feeds */
     describe('New Feed Selection', function() {
-        beforeEach(function(done) {
-            loadFeed(0, done);
-        });
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         */
+        /* Check that when a new feed is loaded that the content actually changes. */
          it('has changed', function(done) {
-            const entryFromFirstFeed = document.querySelector('.feed .entry').innerText;
-            
-            loadFeed(1, function() {
-                const entryFromSecondFeed = document.querySelector('.feed .entry').innerText;
-                expect(entryFromFirstFeed).not.toEqual(entryFromSecondFeed);
-                done();
+
+            let entryFromFirstFeed;
+            let entryFromSecondFeed;
+
+            loadFeed(0, function() {
+                entryFromFirstFeed = document.querySelector('.feed .entry').innerText;
+                loadFeed(1, function() {
+                    entryFromSecondFeed = document.querySelector('.feed .entry').innerText;
+                    expect(entryFromFirstFeed).not.toEqual(entryFromSecondFeed);
+                    done();
+                });
             });
          });
-
     });
 }());
