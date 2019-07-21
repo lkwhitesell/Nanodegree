@@ -1,3 +1,32 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.menu {
+	width: 25%;
+}
+
+.cat-option {
+	list-style-type: none;
+}
+
+.cat-option:hover {
+	background-color: #555;
+	color: white;
+}
+
+.cat-display-area {
+	width: 75%;
+}
+
+.cat.hidden{
+	display: none;
+}
+
 .images {
-	width: 30%;
+	width: 50%;
 }
