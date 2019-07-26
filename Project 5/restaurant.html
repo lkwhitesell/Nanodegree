@@ -9,31 +9,33 @@
   <title>Restaurant Info</title>
 </head>
 
-<body class="inside">
+<body>
 
   <header>
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" class="breadcrumb">
       <li><a href="/">Home</a></li>
     </ul>
   </header>
 
-  <main id="maincontent">
-    <section id="map-container">
-      <div id="map"></div>
+  <main class="restaurant-info main-content">
+    
+    <section id="map" class="map"></section>
+    
+    <section class="restaurant-container">
+      <h1 id="restaurantName" class="restaurant-name"></h1>
+      <img id="restaurantImg" class="restaurant-img">
+      <p id="restaurantCuisine" class="restaurant-cuisine"></p>
+      <p id="restaurantAddress" class="restaurant-address"></p>
+      <table id="restaurantHours" class="restaurant-hours"></table>
     </section>
-    <section id="restaurant-container" class="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+    
+    <section id="reviewsContainer" class="reviews-container">
+      <ul id="reviewsList" class="reviews-list"></ul>
     </section>
-    <section id="reviews-container">
-      <ul id="reviews-list"></ul>
-    </section>
+
   </main>
 
   <footer id="footer">
