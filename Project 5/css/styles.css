@@ -6,18 +6,8 @@ body {
   margin: 0;
 	line-height: 1.5;
 }
-/*
-body {
-	background-color: #fdfdfd;
-	position:relative;
-}
-ul, li {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
-}
-*/
-#maincontent {
+
+.maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
 }
@@ -30,8 +20,8 @@ ul, li {
 .footer {
   background-color: #444;
   color: #aaa;
-  font-size: 8pt;
-  letter-spacing: 1px;
+  font-size: 0.7rem;
+  letter-spacing: 0.06rem;
   padding: 2%;
   text-align: center;
   text-transform: uppercase;
@@ -46,18 +36,18 @@ ul, li {
   color: #3397db;
 }
 /* ====================== Navigation ====================== */
-nav {
+.navigation {
   width: 100%;
-  height: 80px;
   background-color: #252831;
   text-align:center;
+  padding: 2%;
 }
-nav h1 {
+.navigation h1 {
   margin: auto;
 }
-nav h1 a {
+.navigation h1 a {
   color: #fff;
-  font-size: 14pt;
+  font-size: 1.5rem;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -66,7 +56,7 @@ nav h1 a {
     padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
-    font-size: 17px;
+    font-size: 1rem;
     margin: 0;
     width: 100%;
 }
@@ -118,7 +108,7 @@ nav h1 a {
 .filter-option {
   background-color: white;
   border: 1px solid #fff;
-  font-size: 11pt;
+  font-size: 0.9rem;
   margin-left: 1%;
   margin-right: 1%;
   max-width: 200px;
@@ -146,14 +136,6 @@ nav h1 a {
   background-color: #ccc;
   display: block;
   width: 100%;
-}
-.restaurant-name {
-  color: #f18200;
-  font-weight: 200;
-  line-height: 1.3;
-  text-transform: uppercase;
-}
-.restaurants-list p {
 }
 .view-details-button {
   background-color: orange;
@@ -190,18 +172,24 @@ nav h1 a {
 .restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 20pt;
+  font-size: 1.5rem;
   font-weight: 200;
-  letter-spacing: 0;
   text-transform: uppercase;
-  line-height: 1.1;
+}
+.restaurant-container .restaurant-name {
+  text-align: center;
+}
+.restaurant-container .restaurant-address {
+  text-align: center;
 }
 .restaurant-container .restaurant-img {
 	width: 100%;
 }
+.restaurant-neighborhood {
+  font-size: 1rem;
+}
 .restaurant-address {
-  font-size: 12pt;
-  text-align: center;
+  font-size: 1rem;
 }
 .restaurant-hours {
   margin-left: auto;
@@ -210,7 +198,7 @@ nav h1 a {
 .restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 12pt;
+  font-size: 1rem;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
@@ -229,7 +217,7 @@ nav h1 a {
 }
 .reviews-container h2 {
   color: #f58500;
-  font-size: 24pt;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-top: 3%
   margin-bottom: 0;
@@ -246,10 +234,11 @@ nav h1 a {
   list-style-type: none;
   overflow: hidden;
   position: relative;
-  width: 90%;
   padding: 3%;
   margin-top: 3%;
   margin-bottom: 3%;
+  font-size: .9rem;
+
 }
 .reviews-list li p {
   margin: 0 0 10px;
