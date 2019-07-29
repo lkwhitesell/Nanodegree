@@ -1,27 +1,27 @@
-const staticCacheName = 'restaurant-app-v4';
+const staticCacheName = 'restaurant-app-v1';
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(staticCacheName).then(function(cache) {
 			return cache.addAll([
-				'/Project 5/',
-				'/Project 5/index.html',
-				'/Project 5/restaurant.html',
-				'/Project 5/css/styles.css',
-				'/Project 5/img/1.jpg',
-				'/Project 5/img/2.jpg',
-				'/Project 5/img/3.jpg',
-				'/Project 5/img/4.jpg',
-				'/Project 5/img/5.jpg',
-				'/Project 5/img/6.jpg',
-				'/Project 5/img/7.jpg',
-				'/Project 5/img/8.jpg',
-				'/Project 5/img/9.jpg',
-				'/Project 5/img/10.jpg',
-				'/Project 5/data/restaurants.json',
-				'/Project 5/js/main.js',
-				'/Project 5/js/restaurant_info.js',
-				'/Project 5/js/dbhelper.js'
+				'/',
+				'index.html',
+				'restaurant.html',
+				'/css/styles.css',
+				'/img/1.jpg',
+				'/img/2.jpg',
+				'/img/3.jpg',
+				'/img/4.jpg',
+				'/img/5.jpg',
+				'/img/6.jpg',
+				'/img/7.jpg',
+				'/img/8.jpg',
+				'/img/9.jpg',
+				'/img/10.jpg',
+				'/data/restaurants.json',
+				'/js/main.js',
+				'/js/restaurant_info.js',
+				'/js/dbhelper.js'
 			]);
 		})
 	);
