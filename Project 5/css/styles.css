@@ -1,6 +1,3 @@
-@charset "utf-8";
-/* CSS Document */
-
 body {
 	font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -12,11 +9,13 @@ body {
   min-height: 100%;
   background-color: #f3f3f3;
 }
+
 .header {
   top: 0;
   width: 100%;
   z-index: 1000;
 }
+
 .footer {
   color: #aaa;
   font-size: 0.7rem;
@@ -26,14 +25,18 @@ body {
   text-transform: uppercase;
   background-color: #252831;
 }
+
 .footer .links {
   color: #f18200;
 }
+
 /* ========================= Links ========================= */
+
 .links {
   text-decoration: none;
 }
-.links:hover, 
+
+.links:hover,
 .links:focus {
   color: #3397db;
 }
@@ -46,25 +49,30 @@ body {
   height:1px;
   overflow:hidden;
 }
-.skip-link:focus { 
+
+.skip-link:focus {
   top: 0;
   left: auto;
-  width:auto; 
-  height:auto; 
+  width:auto;
+  height:auto;
   z-index: 1000;
   text-decoration: none;
   color: #f18200;
 }
+
 /* ====================== Navigation ====================== */
+
 .navigation {
   width: 96%;
   text-align:center;
   padding: 2%;
   background-color: #252831;
 }
+
 .navigation h1 {
   margin: auto;
 }
+
 .navigation .links {
   font-size: 1.5rem;
   font-weight: 200;
@@ -72,6 +80,7 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+
 .breadcrumb {
   padding: 1%;
   list-style: none;
@@ -101,28 +110,34 @@ body {
 /* Add a color on mouse-over */
 .breadcrumb .links:hover {
   text-decoration: underline;
-  color: #923A21;
+  color: #923a21;
 }
+
 /* ====================== Map ====================== */
+
 .map {
   height: 400px;
   width: 100%;
 }
+
 /* ====================== Restaurant Filtering ====================== */
+
 .filter {
   display: flex;
   justify-content: flex-start;
   width: 90%;
-  background-color: #3D5871;
+  background-color: #3d5871;
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .filter h2 {
   font-size: 1rem;
   font-weight: 200;
   color: #fff;
 }
+
 .filter-option {
   font-size: 0.875rem;
   background-color: #fff;
@@ -134,9 +149,11 @@ body {
 }
 
 /* ====================== Restaurant Listing ====================== */
+
 .restaurants-content {
   height: 100%;
 }
+
 .restaurants-list {
   display: flex;
   flex-flow: row wrap;
@@ -146,6 +163,7 @@ body {
   padding-right: 5%;
   background-color: #f3f3f3;
 }
+
 .restaurant {
   border: 2px solid #ccc;
   width: 25%;
@@ -153,13 +171,15 @@ body {
   padding: 1%;
   background-color: #fff;
 }
+
 .restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   width: 100%;
 }
+
 .view-details-button {
-  background-color: #923A21;
+  background-color: #923a21;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -174,6 +194,7 @@ body {
     align-items: center;
     padding: 0;
   }
+
   .restaurant {
     width: 95%;
   }
@@ -184,29 +205,36 @@ body {
     width: 40%;
   }
 }
+
 /* ====================== Restaurant Details ====================== */
-.restaurant-name, 
+
+.restaurant-name,
 .title {
-  color: #923A21;
+  color: #923a21;
 }
+
 .restaurant-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
+
 .restaurant-container {
   padding-bottom: 3%;
   text-align: center;
 }
+
 .restaurant-name {
   font-size: 1.75rem;
   font-weight: 200;
   text-transform: uppercase;
 }
+
 .restaurant-container .restaurant-img {
 	width: 100%;
 }
+
 .restaurant-cuisine {
   background-color: #333;
   color: #eee;
@@ -214,11 +242,13 @@ body {
   text-transform: uppercase;
 	width: 100%;
 }
+
 .restaurant-hours {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
+
 .restaurant-container, .reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
@@ -227,17 +257,20 @@ body {
   padding-right: 5%;
   background-color: #f3f3f3;
 }
+
 .title {
   font-size: 1.75rem;
   font-weight: 300;
   margin-top: 3%
   margin-bottom: 0;
 }
+
 .reviews-list {
   margin: 0;
   padding: 0;
   width: 100%;
 }
+
 .review {
   font-size: 0.875rem;
   background-color: #fff;
@@ -249,11 +282,12 @@ body {
   padding: 3%;
   margin-top: 3%;
   margin-bottom: 3%;
-
 }
+
 .review p {
   margin: 0 0 10px;
 }
+
 .restaurant-hours td {
   color: #666;
 }
