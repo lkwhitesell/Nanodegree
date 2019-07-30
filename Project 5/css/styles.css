@@ -54,7 +54,7 @@ body {
 }
 /* ====================== Navigation ====================== */
 .navigation {
-  width: 100%;
+  width: 96%;
   background-color: #252831;
   text-align:center;
   padding: 2%;
@@ -70,12 +70,12 @@ body {
   text-transform: uppercase;
 }
 .breadcrumb {
-  padding: 10px 40px 16px;
+  padding: 1%;
   list-style: none;
   background-color: #eee;
   font-size: 1rem;
   margin: 0;
-  width: 100%;
+  width: 98%;
 }
 
 /* Display list items side by side */
@@ -133,6 +133,9 @@ body {
 }
 
 /* ====================== Restaurant Listing ====================== */
+.restaurants-content {
+  height: 100%;
+}
 .restaurants-list {
   display: flex;
   flex-flow: row wrap;
@@ -266,6 +269,6 @@ body {
 
 @media only screen and (max-width: 768px) {
   .restaurant-container, .reviews-container {
-    width: 100%;
+    width: 90%;
   }
 }
