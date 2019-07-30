@@ -12,13 +12,12 @@ body {
   min-height: 100%;
 }
 .header {
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 .footer {
-  background-color: #444;
+  background-color: #252831;
   color: #aaa;
   font-size: 0.7rem;
   letter-spacing: 0.06rem;
@@ -27,13 +26,31 @@ body {
   text-transform: uppercase;
 }
 .footer .links {
-  color: orange;
+  color: #f18200;
 }
 .links {
   text-decoration: none;
 }
 .links:hover, .links:focus {
   color: #3397db;
+}
+
+.skip-link {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus { 
+  top: 0;
+  left: auto;
+  width:auto; 
+  height:auto; 
+  z-index: 1000;
+  color: #f18200;
+  text-decoration: none;
 }
 /* ====================== Navigation ====================== */
 .navigation {
@@ -53,36 +70,36 @@ body {
   text-transform: uppercase;
 }
 .breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 1rem;
-    margin: 0;
-    width: 100%;
+  padding: 10px 40px 16px;
+  list-style: none;
+  background-color: #eee;
+  font-size: 1rem;
+  margin: 0;
+  width: 100%;
 }
 
 /* Display list items side by side */
 .breadcrumb li {
-    display: inline;
+  display: inline;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 .breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 .breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+  color: #0275d8;
+  text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 .breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+  color: #01447e;
+  text-decoration: underline;
 }
 /* ====================== Map ====================== */
 .map {
@@ -95,7 +112,7 @@ body {
   display: flex;
   justify-content: flex-start;
   width: 90%;
-  background-color: #3397DB;
+  background-color: #3D5871;
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
@@ -138,7 +155,7 @@ body {
   width: 100%;
 }
 .view-details-button {
-  background-color: orange;
+  background-color: #923A21;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -170,7 +187,7 @@ body {
   width: 100%;
 }
 .restaurant-name {
-  color: #f18200;
+  color: #923A21;
   font-family: Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 200;
@@ -216,7 +233,7 @@ body {
   background: #f3f3f3;
 }
 .reviews-container h2 {
-  color: #f58500;
+  color: #923A21;
   font-size: 1.5rem;
   font-weight: 300;
   margin-top: 3%
