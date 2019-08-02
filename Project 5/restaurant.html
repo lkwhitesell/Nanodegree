@@ -14,16 +14,19 @@
     <nav class="navigation">
       <h1><a class="links" href="/">Restaurant Reviews</a></h1>
     </nav>
-    <ul id="breadcrumb" class="breadcrumb">
-      <li><a href="/" class="links">Home</a></li>
-    </ul>
+
+    <nav>
+      <ol aria-label="Breadcrumb" id="breadcrumb" class="breadcrumb">
+        <li><a href="/" class="links">Home</a></li>
+      </ol>
+    </nav>
   </header>
 
   <main class="restaurant-info main-content">
-    <section id="map" class="map"></section>
+    <section role="application" id="map" class="map"></section>
     <section class="restaurant-container">
       <h2 id="restaurantName" class="restaurant-name"></h2>
-      <img id="restaurantImg" class="restaurant-img" alt="">
+      <img id="restaurantImg" class="restaurant-img">
       <p id="restaurantCuisine" class="restaurant-cuisine"></p>
       <p id="restaurantAddress" class="restaurant-address"></p>
       <table id="restaurantHours" class="restaurant-hours"></table>
